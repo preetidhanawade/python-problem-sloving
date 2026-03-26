@@ -1,0 +1,87 @@
+mylist=["preeti","Priya","komal","asd",23,"sara",60.76,"esha"]
+print(mylist)
+mylist.insert(1,"samuu")
+print(mylist)
+
+mylist=["preeti","Priya","komal","asd",23,"sara",60.76,"esha"]
+print(mylist)
+print(type(mylist))
+print(mylist[0])
+print(mylist[1])
+print(mylist[2])
+print(mylist[-1])
+print(mylist[2:5])
+print(mylist[:5])
+print(mylist[1:])
+print(mylist[1:8:2])
+print(mylist[:])
+print(mylist[::-1])
+
+
+mylist=["preeti","Priya","komal","asd",23,"sara",60.76,"esha"]
+print(mylist)
+if "Priya" in mylist:
+ 	print("yes Priya is available")
+else:
+ 	print("not available")
+
+#append example
+mylist=["preeti","Priya","komal","asd",23,"sara",60.76,"esha"]
+print(mylist)
+mylist.append("harsh")# it will end of the list
+mylist.append("sara")
+print(mylist)
+
+#insert example
+
+#
+mylist=["preeti","Priya","komal","asd",23,"sara",60.76,"esha"]
+print(mylist)
+newlist=mylist.copy()
+print(mylist)
+print(newlist)
+
+
+#example of multidimensional list
+mlist=[["pre","Jha"],["343.3"],["res","sder"]]
+print(mlist)
+#print(mlist[row][col])
+print(mlist[0][0])#pre
+print(mlist[0][1])#jha
+print(mlist[1][0])#343.3
+print(mlist[2][0])#res
+print(mlist[2][1])#sder
+
+#multiple of list
+mlist=[["pre","Jha"]]
+print(mlist*2)#add
+list=[50,23.4,45]
+print(mlist+list)
+
+#delet example
+list2=[34,54,'esha']
+del list2[2]
+print(list2)
+
+
+v[1,2,3,4,5]
+for i in v:
+ 	print(i)
+
+#clear
+list3=[34,54,'esha']
+list3.clear()
+print(list3)
+
+name="sare"#str
+print(name)
+myname=list(name)#typecasting conveting str into list
+print(myname)#['s','a','r','a']
+
+
+#sorting order
+mylist=[44,22,6,0,5,48,98]
+mylist.sort()
+print(mylist)
+
+
