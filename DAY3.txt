@@ -33,8 +33,6 @@ mylist.append("sara")
 print(mylist)
 
 #insert example
-
-#
 mylist=["preeti","Priya","komal","asd",23,"sara",60.76,"esha"]
 print(mylist)
 newlist=mylist.copy()
