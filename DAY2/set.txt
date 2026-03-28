@@ -1,0 +1,80 @@
+# Ex.1) nordered Output of Set 
+myset = {1, 2, "sanjay", 5.66, "rahul", "ayush", "ramesh", "ankit", "rishikesh"}  
+print("Output:", myset)
+  
+# ----Output----: {'ayush', 1, 2, 'rishikesh', 5.66, 'ramesh', 'sanjay', 'ankit', 'rahul'}  
+
+# Ex. 2) Accessing Set Elements by Index (Error Expected) 
+myset = {1, 2, "sanjay", 5.66, "rahul", "ayush", "ramesh", "ankit", "rishikesh"}   
+try:  
+    print("Output:", myset[0])  
+except TypeError as e:  
+    print("Output:", e)  
+# ----Output----: TypeError: 'set' object is not subscriptable  
+  
+# Ex.3) Adding an Element to a Set  
+myset = {1, 2, "sanjay", 5.66, "rahul", "ayush", "ramesh", "ankit", "rishikesh"}  
+myset.add(60)  
+print("Output:", myset)  
+#---- Output----: {1, 2, 5.66, 'rishikesh', 'sanjay', 'rahul', 'ramesh', 'ankit', 60, 'ayush'}  
+  
+# Ex.4) Discarding an Element from a Set
+myset = {1, 2, "sanjay", 5.66, "rahul", "ayush", "ramesh", "ankit", "rishikesh"}    
+myset.discard(2)  
+print("Output:", myset)  
+#---- Output----: {1, 'ayush', 'sanjay', 5.66, 'ramesh', 'rishikesh', 'ankit', 'rahul', 60}  
+  
+# Ex.5: Removing an Element from a Set 
+myset = {1, 2, "sanjay", 5.66, "rahul", "ayush", "ramesh", "ankit", "rishikesh"}   
+try:  
+    myset.remove(1)  
+    print("Output:", myset)  
+except KeyError as e:  
+    print("Output:", e)  
+#----Output----: {5.66, 'ramesh', 'rishikesh', 'ayush', 'rahul', 'ankit', 'sanjay', 60}  
+ 
+# Ex.6: Union of Two Sets 
+ 
+myset = {10, 20, 30, 40}  
+yorset = {"prashant", "jha"}  
+newset = myset.union(yorset)  
+print("Output:", newset)  
+#----Output----: {'jha', 20, 40, 10, 'prashant', 30}  
+  
+# Ex.7: Intersection of Two Sets  
+myset = {10, 20, 30, 40}  
+yorset = {10, 50, 60, 30}  
+print("Output:", myset.intersection(yorset))  
+#----Output---: {10, 30}  
+
+# Ex.8: Difference of Two Sets  
+print("Output:", myset.difference(yorset))  
+#----Output----: {40, 20}  
+  
+# Ex.9: Clearing a Set  
+myset.clear()  
+print("Output:", myset)  
+#----Output----: set()  
+  
+# Ex.10: Using pop() Function  
+myset = {10, 20, 30, 40}  
+print("Output:", myset.pop())  
+#----Output----: 40 (or another element, as sets are unordered)  
+  
+# Ex.11: Difference using '-' Operator  
+myset = {10, 20, 30, 40}  
+yorset = {10, 50, 60, 30}  
+print("Output:", myset - yorset)  
+#-----Output----: {40, 20}  
+
+# Ex.12: Union using '|' Operator  
+print("Output:", myset | yorset)  
+#----Output----: {40, 10, 50, 20, 60, 30}  
+  
+# Ex.13: Intersection using '&' Operator  
+print("Output:", myset & yorset)  
+#----Output-----: {10, 30}  
+  
+# Ex.14: Symmetric Difference using '^' Operator  
+print("Output:", myset ^ yorset)  
+#----Output----: {40, 50, 20, 60}  
