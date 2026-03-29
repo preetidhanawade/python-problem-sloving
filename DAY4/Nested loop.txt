@@ -1,0 +1,118 @@
+
+#--------NESTED LOOPS----------------
+1>#ex2.WAP to accept 3 numbers like a,b,c and find max number
+#Nested if else:
+a=int(input("Enter the value of a:"))#5
+b=int(input("Enter the value of b:"))#10
+c=int(input("Enter the value of c:"))#20
+if a>b:#5>30
+    if a>c:
+        print("A is greater")
+        #statement
+    else:
+        print("C is greater")
+        #statement
+else:
+    if b>c:#10>20
+        print("B is greater")
+        #statement
+    else:
+        print("C is greater")
+        #statement
+------------output----------
+#Enter the value of a:25
+#Enter the value of b:25
+#Enter the value of c:25
+#C is greater
+
+
+2>#WAP to accept 3 numbers like a,b,c and find min number
+#Nested if else:
+a=int(input("Enter the value of a:"))#5
+b=int(input("Enter the value of b:"))#10
+c=int(input("Enter the value of c:"))#20
+if a<b:#5<10
+    if a<c:#5<30
+        print("A is lesser")
+        #statement
+    else:
+        print("C is lesser")
+        #statement
+else:
+    if b<c:#10<20
+        print("B is lesserr")
+        #statement
+    else:
+        print("C is lesserr")
+        #statement
+3.
+mylist=[3,4,5,8,2]
+for i in mylist: #i=5
+    print(i)
+
+4.#for(initialization; condition; inc/dec)
+for i in range(5): #i=2
+    print(i)
+
+5.#for(initialization; condition; inc/dec)
+for i in range(1,11,2): #i=2
+    print(i) #1 3 4 7 9
+
+6.#for(initialization; condition; inc/dec)
+for i in range(1,11): #i=2
+    print(i*2) #1 3 4 7 9
+
+7.#for(initialization; condition; inc/dec)
+for i in range(1,11): #i=2
+    print(i*2,"   ",i*3,"   ",i*4,"   ",i*5) 
+#output:
+2     3       4       5     6    7     8     9    10
+4      6      8      10    12    14    16    18    20
+6      9      12     15    18    21    24    27    30
+8      12     16     20    24    28    32    36    40
+10     15     20     25    30    35    40    45    50
+12     18     24     30    36    42    48    54    60
+14     21     28     35    42    49    56    63    70
+16     24     32     40    48    56    64    72    80
+18     27     36     45    54    63    72    81    90
+20     30     40     50    60    70    80    90    100
+
+#Ex)8.WAP to implement user define function?
+username=input("Enter Username:")
+password=input("Enter password:")
+if username==password:
+    print("login successful")
+else:
+    print("Invalid login")
+
+9.
+brand=input("Enter your coldrink name either in uppercase or in lowercase but not combine:")
+if brand=="pepsi" or brand=="PEPSI":
+    print("swag")
+elif brand=="dew" or brand=="DEW":
+    print("dar age jeet hai")
+elif brand=='thumsup' or brand=='THUMSUP':
+    print('taste the thunder')
+else:
+    print('go with your brand')
+
+10.
+n1=int(input("Enter the first number:"))#5
+n2=int(input("Enter the second number:"))#2
+n3=int(input("Enter the third number:"))#7
+if n1>n2 and n1>n3:
+    print("Biggest Number is:",n1)
+elif n2>n3:
+    print("Biggest Number is:",n2)
+else:
+    print("Biggest Number is:",n3)
+
+11.
+count=0
+for i in range(9):
+    if i%2==0:
+        print(i)
+    else:
+        print(i)
+        count+=1
+print("count=",count)
